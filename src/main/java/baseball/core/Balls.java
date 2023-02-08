@@ -38,7 +38,7 @@ public class Balls {
         return new PlayResult(strikeCount, ballCount);
     }
 
-    public BallStatus play(Ball other) {
+    private BallStatus play(Ball other) {
         Set<BallStatus> result = new HashSet<>();
         for (Ball ball : this.balls) {
             result.add(ball.play(other));
